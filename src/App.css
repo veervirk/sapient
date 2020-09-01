@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body{
   background-color: #ececec;
+  font-family: 'Roboto', sans-serif;
+  font-size:15px;
 }
 .App {
   text-align: center;
@@ -58,7 +61,7 @@ body{
   padding: 7px 10px;
   border-radius: 4px;
   border: none;
-  margin: 9px 10px;
+  margin: 9px;
   width:70px;
   font-size:15px;
 }
@@ -76,22 +79,22 @@ body{
 .justify-content-between{
   justify-content: space-between;
 }
-.filterPNL{
-  width: 20.33%;
-}
-.productRPNL{
-  width: 79.67%;
-}
 .launchPNL{
-  width: 21.94%;
-  margin-left:0.5%;
-  margin-right:0.5%;
+  width: 22%;
+  margin-left:1%;
   margin-bottom: 1%;
   padding:10px;
   background-color: #ffffff;
+  border-radius: 4px;
 }
 .launch_img{
   max-width: 100%;
+  margin-bottom: 10px;
+}
+.mission_name{
+  color: #4141f5;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
 .sidebar-block{
   background-color: #fff;
@@ -110,21 +113,45 @@ body{
   margin-bottom: 5px;
 }
 @media(max-width: 700px){
-.filterPNL, .productRPNL{
+.filterPNL, .productRPNL, .launchPNL{
   width: 100%;
+}
+.productRPNL{
+  margin-top: 15px; 
+  margin-left: 0px;
+}
+.launchPNL{
+  margin:0px 0px 15px 0px;
 }
 }
 @media(min-width: 701px) and (max-width: 1024px) {
 .filterPNL{
-  width: 30%;
+  min-width: 205px;
+  width: 205px;
 } 
-.productRPNL{
-  width: 70%;
-}
 .fliterHead span{
   width: 80%;
 }
+.launchPNL {
+  width: 43.6%;
+  margin-left: 2%;
+  margin-bottom: 2%;
 }
-@media(max-width:1025px){
-  
+}
+@media(min-width:1025px) and (max-width: 1309px){
+.filterPNL{
+  min-width: 265px;
+  width: 265px;
+}
+.launchPNL {
+  width: 21.2%;
+  margin-left: 1%;
+  margin-bottom: 1%;
+} 
+}
+@media(min-width:1310px){
+ .filterPNL{
+  min-width: 265px;
+  width: 265px;
+} 
 }
