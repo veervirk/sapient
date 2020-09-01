@@ -5,7 +5,9 @@ const Home = () => {
     return (
         <React.Fragment>
             <div className="main-container">
-               <FilterList/>
+            	<div className="container">
+               		<FilterList/>
+            	</div>
             </div>
         </React.Fragment>
     );
